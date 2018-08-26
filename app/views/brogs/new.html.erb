@@ -1,0 +1,20 @@
+<div class="contents row">
+   <div class="container">
+
+    <%= form_for @brog do |f| %>
+      <%= f.text_field :title, placeholder: 'title',style: 'width: 80%;height: 50px;' %>
+
+
+      <div style="margin: 8px 0">
+            <%= f.text_area :text, placeholder: 'ブログを書いてね！', style: 'width: 100%;height: 300px;' %>
+          </div>
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+    <% end %>
+    </div>
+</div>
+
+
+
+

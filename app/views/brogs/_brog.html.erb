@@ -1,0 +1,51 @@
+<div class="content_post">
+
+
+
+
+<div class=rectangle>
+  <div class="row">
+    <div class="col s12 m5">
+      <div class="card-panel white">
+        <span class="black-text"><%= brog.title %>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12 m12">
+      <div class="card-panel blue-grey darken-1">
+        <span class="white-text"><%= brog.text %>
+
+        </span>
+      </div>
+    </div>
+  </div>
+
+<span class="name">
+    <a href="/users/<%= brog.user_id %>">
+      <span>投稿者</span><%= brog.user.nickname %>
+    </a>
+  </span>>
+</div>
+</div>
+
+<%= link_to "詳細", brog_path(brog.id), method: :get , class: 'waves-effect waves-light btn'%>
+
+
+
+
+<% if user_signed_in? && current_user.id == brog.user_id %>
+
+        <%= link_to '編集', "/brogs/#{brog.id}/edit", method: :get, class: 'waves-effect waves-light btn'%>
+
+        <%= link_to '削除', "/brogs/#{brog.id}", method: :delete, data: { confirm: '削除しますか？' }  , class: 'waves-effect waves-light btn'%>
+ <% end %>
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+<div class="contents row">
+   <div class="container">
+  <%= form_tag('/brogs', method: :post) do %>
+    <h5>
+      投稿する
+    </h5>
+    <input placeholder="title" type="string" name="title" autofocus="true">
+    <textarea placeholder="text" name="text" cols="30" rows="10"></textarea>
+    <input type="submit" value="SENT">
+
+   <% end %>
+
+    </div>
+</div>

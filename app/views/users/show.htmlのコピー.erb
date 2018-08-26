@@ -1,0 +1,12 @@
+ <div class="contents row" >
+    <p><%= @nickname %>さんの投稿一覧</p>
+    <% @brogs.each do |brog| %>
+      <div class="content_post">
+        <textarea cols="20" name="title" placeholder="strig" rows="1"><%= brog.title %></textarea>
+        <br>
+        <br>
+      <textarea cols="60" name="text" placeholder="text" rows="10"><%= brog.text %></textarea>
+      </div>
+    <% end %>
+    <%= paginate(@brogs) %>
+  </div>

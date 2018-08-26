@@ -1,0 +1,16 @@
+current directory: /Users/apple/projects/minibrog/vendor/bundle/ruby/2.3.0/gems/binding_of_caller-0.8.0/ext/binding_of_caller
+/Users/apple/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20180823-1096-g0x8d1.rb extconf.rb
+
+current directory: /Users/apple/projects/minibrog/vendor/bundle/ruby/2.3.0/gems/binding_of_caller-0.8.0/ext/binding_of_caller
+make "DESTDIR=" clean
+make: *** No rule to make target `clean'.  Stop.
+
+current directory: /Users/apple/projects/minibrog/vendor/bundle/ruby/2.3.0/gems/binding_of_caller-0.8.0/ext/binding_of_caller
+make "DESTDIR="
+echo "Nada."
+Nada.
+
+current directory: /Users/apple/projects/minibrog/vendor/bundle/ruby/2.3.0/gems/binding_of_caller-0.8.0/ext/binding_of_caller
+make "DESTDIR=" install
+echo "Nada."
+Nada.

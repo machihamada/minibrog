@@ -1,0 +1,9 @@
+<div class="contents row">
+  <% @brogs.each do |brog| %>
+    <%= render partial: "brog", locals: { brog: brog } %>
+  <% end %>
+  <%= paginate(@brogs) %>
+</div>
+
+
+
