@@ -5,10 +5,10 @@
         <span><%= image_tag 'arrow_top.png' %></span>
       <ul class="more_list">
         <li>
-          <%= link_to '編集', "/brogs/#{@brog.id}/edit", method: :get %>
+          <%= link_to '編集', "/brogs/#{@brog.id}/edit", method: :get, class: 'waves-effect waves-light btn'%>
         </li>
         <li>
-          <%= link_to '削除', "/brogs/#{@brog.id}", method: :delete %>
+          <%= link_to '削除', "/brogs/#{@brog.id}", method: :delete, data: { confirm: '削除しますか？' }  , class: 'waves-effect waves-light btn'%>
         </li>
       </ul>
     </div>
